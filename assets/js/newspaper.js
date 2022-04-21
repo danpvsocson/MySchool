@@ -8,8 +8,6 @@ for (const newsPaper of newsPapers) {
         subNewsPaper.style.display = "none";
         iconShow.style.display = "none";
         iconHidden.style.display = "initial"
-    }else{
-        
     }
     newsPaper.addEventListener("click", showSubNewsPaper);
 

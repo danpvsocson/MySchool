@@ -27,6 +27,14 @@ html {
         top: 100%;
     }
 }
+@keyframes newspaper-animation {
+    from{
+        margin-top: -20px;
+    }
+    to {
+        margin-top: 10px;
+    }
+}
 
 /* ! End Reset CSS */
 
@@ -168,6 +176,7 @@ html {
     list-style: none;
     font-size: 15px;
     padding-left: 0px;
+   
 }
 .newspaper-item{
     padding: 15px 10px;
@@ -176,7 +185,6 @@ html {
     border-left: 1px solid rgb(187, 187, 187);
     cursor: pointer;
     font-weight: 600;
-    /* height: 54px; */
 }
 .newspaper-item i{
     font-size: 11px;
@@ -187,6 +195,7 @@ html {
     list-style: none;
     margin-top: 10px;
     display: block;
+    animation: newspaper-animation ease .1s;
 }
 #content .sub-newspaper-item a{
     color: var(--colora-a-newspaper);
