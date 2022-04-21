@@ -15,7 +15,8 @@ html {
     --color-bg-header: rgb(241, 241, 241);
     --line-height-mobile: 25px;
     --size-header-pc: 76px;
-    --size-header-mobile: 60px
+    --size-header-mobile: 60px;
+    --colora-a-newspaper: rgba(31, 31, 255, 0.6)
 }
 /* *Animation */
 @keyframes header-animation {
@@ -24,6 +25,13 @@ html {
     }
     to {
         top: 100%;
+    }
+}
+@keyframes newspaper-animation {
+    from {
+        margin-top: -20px;
+    }to {
+        margin-top: 10px;
     }
 }
 
@@ -136,8 +144,9 @@ html {
 /* *End Silde Banner */
 
 /* * Begin Content */
-a{
+#content a{
     text-decoration: none;
+    color: black;
 }
 /* *Begin News */
 #content .heading{
@@ -151,12 +160,53 @@ a{
     padding: 10px 0px;
     color: rgba(0, 0, 0, 0.5);
 }
-/* *Bgin Bao Tri */
+/* * Tuyen Sinh */
+.tuyen-sinh div:last-child a{
+    color: black;
+}
+/* *Begin Bao Tri */
 .bao-tri h4{
     font-size: 20px;
 }
 .bao-tri iframe {
     height: 400px;
 }
+.list-newspaper{
+    list-style: none;
+    font-size: 15px;
+    
+}
+.newspaper-item{
+    padding: 15px 10px;
+    border-top: 1px solid rgba(172, 172, 172, 0.2)
+    ;
+    border-left: 1px solid rgb(187, 187, 187);
+    cursor: pointer;
+    font-weight: 600;
+}
+.newspaper-item i{
+    font-size: 11px;
+    color: rgb(124, 124, 124);
+    margin-right: 10px;
+}
+.list-sub-newspaper{
+    list-style: none;
+    display: none;
 
-
+}
+#content .sub-newspaper-item a{
+    color: var(--colora-a-newspaper);
+}
+#content .sub-newspaper-item:hover a{
+    text-decoration: underline  var(--colora-a-newspaper) solid;
+}
+.newspaper-item:hover .list-sub-newspaper{
+    display: block;
+    animation: newspaper-animation ease 1s;
+    margin-top: 10px;
+}
+.onclick-list-newspaper{
+    
+    border-left: 1px solid red;
+    color: red;
+}

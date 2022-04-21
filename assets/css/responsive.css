@@ -56,9 +56,10 @@
     .tuyen-sinh h4{
         padding: 15px 5px;
     }
-    .tuyen-sinh div:last-child > div{
+    .tuyen-sinh div:last-child a{
         align-items: center;
         justify-content: center;
+        color: black;
     
     }
 }
