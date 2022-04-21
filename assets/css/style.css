@@ -1,0 +1,162 @@
+/* *Reset CSS */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* * Khai bao toan cuc */
+:root {
+    --color-bg-header: rgb(241, 241, 241);
+    --line-height-mobile: 25px;
+    --size-header-pc: 76px;
+    --size-header-mobile: 60px
+}
+/* *Animation */
+@keyframes header-animation {
+    from {
+        top: 150%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+/* ! End Reset CSS */
+
+/* *Begin Header */
+.bg-header {
+    background-color: var(--color-bg-header);
+    /* background-color: aqua; */
+}
+#header {
+    height: var(--size-header-pc);
+}
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#header .logo-header img {
+    height: 55px;
+    object-fit: cover;
+}
+#header .nav-item a {
+     line-height: 60px;
+}
+#header .nav-item > a {
+    color: rgb(139, 139, 139);
+    text-transform: uppercase;
+}
+#menu .nav-item > a {
+    font-weight: 600;
+    color: black;
+}
+#menu .nav-item:hover {
+    background-color: white;
+}
+#header > nav {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+#menu .nav-item {
+    position: relative;
+}
+#menu .sub-menu {
+    position: absolute;
+    list-style: none;
+    min-width: 200px;
+    border: 1px solid rgba(185, 185, 185, 0.3);
+    padding: 0;
+    left: 0;
+    display: none;
+}
+#menu .sub-menu-list a {
+    display: block;
+    line-height: 40px;
+    padding: 5px 10px;
+}
+#menu .sub-menu-list {
+    border-bottom: 1px solid rgba(185, 185, 185, 0.3);
+    background-color: var(--color-bg-header);
+}
+#menu .sub-menu-list a {
+    text-decoration: none;
+    color: black;
+}
+#menu .sub-menu-list:hover {
+    background-color: rgb(207, 207, 207);
+}
+/* *End Header */
+
+/* *Begin Slide Banner */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide-banner .img-banner {
+    max-height: 800px;
+}
+/* *End Silde Banner */
+
+/* * Begin Content */
+a{
+    text-decoration: none;
+}
+/* *Begin News */
+#content .heading{
+    display: inline-block;
+    min-width: 230px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0px;
+}
+#content .sub-header{
+    padding: 10px 0px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* *Bgin Bao Tri */
+.bao-tri h4{
+    font-size: 20px;
+}
+.bao-tri iframe {
+    height: 400px;
+}
+
+
