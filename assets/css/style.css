@@ -27,13 +27,6 @@ html {
         top: 100%;
     }
 }
-@keyframes newspaper-animation {
-    from {
-        margin-top: -20px;
-    }to {
-        margin-top: 10px;
-    }
-}
 
 /* ! End Reset CSS */
 
@@ -183,6 +176,7 @@ html {
     border-left: 1px solid rgb(187, 187, 187);
     cursor: pointer;
     font-weight: 600;
+    /* height: 54px; */
 }
 .newspaper-item i{
     font-size: 11px;
@@ -191,22 +185,15 @@ html {
 }
 .list-sub-newspaper{
     list-style: none;
-    display: none;
-
+    margin-top: 10px;
+    display: block;
 }
 #content .sub-newspaper-item a{
     color: var(--colora-a-newspaper);
 }
-#content .sub-newspaper-item:hover a{
-    text-decoration: underline  var(--colora-a-newspaper) solid;
-}
-.newspaper-item:hover .list-sub-newspaper{
-    display: block;
-    animation: newspaper-animation ease 1s;
-    margin-top: 10px;
-}
-.onclick-list-newspaper{
 
-    border-left: 1px solid red;
-    color: red;
+
+.change-color{
+    border-left: 2px solid rgb(44, 187, 1);
+    color: rgb(44, 187, 1);
 }
