@@ -63,15 +63,21 @@
     
     }
     /* *Newspaper */
-    #content .sub-newspaper-item:hover a{
-        text-decoration: underline  var(--colora-a-newspaper) solid;
+    #content .bao-tri .accordion-body a:hover{
+        text-decoration: underline ;
+    }
+    /* * Các Ngành Khác */
+    .other > div{
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 
 
 /** Mobile */
-@media (max-width: 724px){
+@media (max-width: 740px){
     html{
         font-size: 12px;
     }
@@ -153,6 +159,37 @@
     .bao-tri iframe {
         height: 200px;
     }
-    
+    .bao-tri button{
+        padding: 8px 0px 8px 8px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .accordion-button::before{
+        flex-shrink: 0;
+        width: 10px;
+        height: 10px;
+        content: "";
+        margin: 0px 8px;
+        background-image: url(../img/icon/plus.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .accordion-button:not(.collapsed)::before{
+        flex-shrink: 0;
+        content: "";
+        width: 10px;
+        margin: 0px 8px;
+        height: 10px;
+        background-image: url(../img/icon/minus.png);
+    }
+    /* * Các ngành khác */
+    .other > div{
+        width: 100%;
+        padding: 0px 24px;
+    }
+    #other h2{
+        font-size: 23px;
+    }
+
 
 }
