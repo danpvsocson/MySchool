@@ -197,5 +197,8 @@
     .footer{
         padding: 0px 24px;
     }
-    
+    .copyright {
+        font-size: 9px;
+        padding: 0px 24px;
+    }
 }
