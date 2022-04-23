@@ -161,6 +161,9 @@ html {
     padding: 10px 0px;
     color: rgba(0, 0, 0, 0.5);
 }
+.fa-heart{
+    cursor: pointer;
+}
 /* * Tuyen Sinh */
 .tuyen-sinh div:last-child a{
     color: black;

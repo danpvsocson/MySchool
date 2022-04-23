@@ -57,4 +57,9 @@
 //                 item.classList.remove('change-color')
 //             }
 //         }
-    
+const heart = document.getElementById('.fa-heart')
+function heartSuccess(){
+    heart.classList.remove('far');
+    heart.classList.add('fas')
+}
+heart.addEventListener("click", heartSuccess);
