@@ -154,7 +154,7 @@ html {
     display: inline-block;
     min-width: 230px;
     margin-left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
     padding: 10px 0px;
 }
 #content .sub-header{
@@ -218,8 +218,9 @@ html {
     background-repeat: no-repeat;
 }
 .bao-tri .accordion-button:not(.collapsed){
-    color: green;
+    color: rgb(255, 166, 0);
     /* border-left: 2px solid red; */
+    background: none;
 }
 .accordion-button:not(.collapsed)::before{
     flex-shrink: 0;
