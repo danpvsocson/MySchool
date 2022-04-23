@@ -273,5 +273,30 @@ html {
     margin: 0px;
 }
 
+/* *Begin footer */
+.footer{
+    padding: 48px 0px 0px 0px;
+}
+.footer .footer__heading{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.deco{
+    width: 100px;
+    border-bottom: 1px solid rgb(0, 255, 0);
+}
+.footer a{
+    color: black;
+
+}
+.footer a:hover{
+    color: rgb(1, 209, 1);
+}
+.social img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 15px;
+}
 
 
