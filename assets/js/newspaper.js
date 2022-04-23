@@ -57,9 +57,21 @@
 //                 item.classList.remove('change-color')
 //             }
 //         }
-const heart = document.getElementById('.fa-heart')
-function heartSuccess(){
-    heart.classList.remove('far');
-    heart.classList.add('fas')
+const hearts = document.querySelectorAll('.fa-heart')
+const numbers = document.querySelectorAll('.number')
+var i = 1
+
+console.log(i)
+for(const heart of hearts){
+    for(const number of numbers){
+        function heartSuccess(){
+            heart.classList.remove('far');
+            heart.classList.add('fas')
+        
+            number.innerHTML = i++;
+        }
+    }
+    heart.addEventListener("click", heartSuccess);
+
 }
-heart.addEventListener("click", heartSuccess);
+    
