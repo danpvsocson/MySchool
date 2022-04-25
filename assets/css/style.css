@@ -36,6 +36,9 @@ html {
     }
 }
 
+.test{
+    scroll-behavior: smooth;
+}
 /* ! End Reset CSS */
 
 /* *Begin Header */
