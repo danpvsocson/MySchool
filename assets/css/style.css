@@ -304,5 +304,8 @@ html {
     object-fit: cover;
     margin-right: 15px;
 }
-
+.date{
+    display: flex;
+    justify-content: center;
+}
 

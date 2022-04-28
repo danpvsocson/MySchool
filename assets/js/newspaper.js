@@ -61,7 +61,7 @@ const hearts = document.querySelectorAll('.fa-heart')
 const numbers = document.querySelectorAll('.number')
 var i = 1
 
-console.log(i)
+// console.log(i)
 for(const heart of hearts){
     for(const number of numbers){
         function heartSuccess(){
@@ -74,4 +74,50 @@ for(const heart of hearts){
     heart.addEventListener("click", heartSuccess);
 
 }
+    var date = new Date();
+    const year = date.getFullYear();
+    const month= date.getMonth() + 1;
+    const day = date.getDate();
+    var dayweek = date.getDay();
+    // function updateTime() {
+    //     var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    //     console.log(time)
+    //     $("#time").text(time);
+        
+    //   }
+    // var update = setInterval(updateTime, 1000);
     
+    var day_name = '';
+
+    switch (dayweek) {
+    case 0:
+        day_name = "Chủ nhật";
+        break;
+    case 1:
+        day_name = "Thứ hai";
+        break;
+    case 2:
+        day_name = "Thứ ba";
+        break;
+    case 3:
+        day_name = "Thứ tư";
+        break;
+    case 4:
+        day_name = "Thứ năm";
+        break;
+    case 5:
+        day_name = "Thứ sau";
+        break;
+    case 6:
+        day_name = "Thứ bảy";
+    }
+    $("#dayweek").text(day_name);
+    $("#day").text(day);
+    $("#month").text(month);
+    $("#year").text(year);
+    var time = setInterval(time, 1000);
+    function time() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("time").innerHTML = t;
+    }
