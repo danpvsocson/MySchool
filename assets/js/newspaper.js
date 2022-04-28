@@ -91,25 +91,25 @@ for(const heart of hearts){
 
     switch (dayweek) {
     case 0:
-        day_name = "Chủ nhật";
+        day_name = "Chủ Nhật";
         break;
     case 1:
-        day_name = "Thứ hai";
+        day_name = "Thứ Hai";
         break;
     case 2:
-        day_name = "Thứ ba";
+        day_name = "Thứ Ba";
         break;
     case 3:
-        day_name = "Thứ tư";
+        day_name = "Thứ Tư";
         break;
     case 4:
-        day_name = "Thứ năm";
+        day_name = "Thứ Năm";
         break;
     case 5:
-        day_name = "Thứ sau";
+        day_name = "Thứ Sau";
         break;
     case 6:
-        day_name = "Thứ bảy";
+        day_name = "Thứ Bảy";
     }
     $("#dayweek").text(day_name);
     $("#day").text(day);
