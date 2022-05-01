@@ -106,7 +106,7 @@ for(const heart of hearts){
         day_name = "Thứ Năm";
         break;
     case 5:
-        day_name = "Thứ Sau";
+        day_name = "Thứ Sáu";
         break;
     case 6:
         day_name = "Thứ Bảy";
@@ -115,9 +115,10 @@ for(const heart of hearts){
     $("#day").text(day);
     $("#month").text(month);
     $("#year").text(year);
+
     var time = setInterval(time, 1000);
     function time() {
-    var d = new Date();
-    var t = d.toLocaleTimeString();
-    document.getElementById("time").innerHTML = t;
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById("time").innerHTML = t;
     }
