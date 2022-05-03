@@ -111,15 +111,23 @@
                         -
                         Công nghệ Bách Khoa.</p>
                     <div class="date">
+                        <div id="1" class="me-2">
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script type="text/javascript">
+                                jQuery.get("http://ipinfo.io", function (e) {
+                                    console.log(e.city)
+                                    var a = e.city
+                                    document.getElementById("1").innerHTML = a;
+                                }, "jsonp")
+                            </script>
+                        </div>
                         <p id="dayweek" class="me-1"></p>,
                         Ngày<p id="day" class="mx-1"></p>
                         Tháng<p id="month" class="mx-1"></p>
                         Năm<p id="year" class="mx-1"></p>
                         <p id="time" class="mx-1"></p>
                     </div>
-                    <div id="">
-                        
-                    </div>
+
                 </div>
 
                 <div class="row">
