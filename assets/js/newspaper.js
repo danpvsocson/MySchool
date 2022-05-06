@@ -122,3 +122,4 @@ for(const heart of hearts){
         var t = d.toLocaleTimeString();
         document.getElementById("time").innerHTML = t;
     }
+    
