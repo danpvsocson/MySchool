@@ -62,7 +62,7 @@ html {
     object-fit: cover;
 }
 #header .nav-item a {
-     line-height: 60px;
+    line-height: 60px;
 }
 #header .nav-item > a {
     color: rgb(139, 139, 139);
